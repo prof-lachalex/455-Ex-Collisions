@@ -60,6 +60,25 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    void ResetGateway()
+    {
+        GameObject gateway = GameObject.Find("Gateway");
+        if(gateway != null) 
+        { 
+            gateway.GetComponent<BoxCollider>().isTrigger = true;
+        }
+    }
+
+    void CloseGateway()
+    {
+        GameObject gateway = GameObject.Find("Gateway");
+        if (gateway != null)
+        {
+            // Visuellement non attrayant: on ne voit pas de mur physiquement, mais la balle ne passera pas.
+            gateway.GetComponent<BoxCollider>().isTrigger = false;
+        }
+    }
+
     // Fonctions Publiques
     public bool IsBallInPlay()
     { 
@@ -75,10 +94,12 @@ public class GameManager : MonoBehaviour
         }
 
         _ballInPlay = true;
+        CloseGateway();
     }
 
     public void OnBallExitsGameArea()
     {
         ResetBall();
+        ResetGateway();
     }
 }
