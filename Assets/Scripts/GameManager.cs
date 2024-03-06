@@ -75,6 +75,12 @@ public class GameManager : MonoBehaviour
         { 
             _gameBall.transform.position = spawnPoint.transform.position;
             _ballInPlay = false;
+
+            Rigidbody rb = _gameBall.GetComponent<Rigidbody>();
+            if(rb != null) 
+            { 
+                rb.velocity = Vector3.zero;
+            }
         }
     }
 
