@@ -15,4 +15,20 @@ public class BallLogic : MonoBehaviour
     {
         
     }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other == null || other.gameObject == null)
+            return;
+
+        if(other.gameObject.name.Equals("Gateway"))
+        {
+            GameManager.Instance.OnBallExitGateway();
+        }
+
+        if (other.gameObject.name.Equals("Wall_DeadZone"))
+        { 
+            GameManager.Instance.OnBallExitsGameArea();
+        }
+    }
 }

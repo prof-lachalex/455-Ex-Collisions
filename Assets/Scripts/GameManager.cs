@@ -50,6 +50,16 @@ public class GameManager : MonoBehaviour
         
     }
 
+    void ResetBall()
+    {
+        GameObject spawnPoint = GameObject.Find("BallSpawnPoint");
+        if(_gameBall != null && spawnPoint != null) 
+        { 
+            _gameBall.transform.position = spawnPoint.transform.position;
+            _ballInPlay = false;
+        }
+    }
+
     // Fonctions Publiques
     public bool IsBallInPlay()
     { 
@@ -65,5 +75,10 @@ public class GameManager : MonoBehaviour
         }
 
         _ballInPlay = true;
+    }
+
+    public void OnBallExitsGameArea()
+    {
+        ResetBall();
     }
 }
