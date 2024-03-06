@@ -9,6 +9,9 @@ public class BumperLogic : MonoBehaviour
     [SerializeField]
     private float _maxBumpingForce = 20f;
 
+    [SerializeField]
+    private int _pointValue = 100;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -36,6 +39,7 @@ public class BumperLogic : MonoBehaviour
                 float bumpingForce = Random.Range(_minBumpingForce, _maxBumpingForce);
                 rb.AddForce(-collision.GetContact(0).normal * bumpingForce, ForceMode.Impulse);
             }
+            GameManager.Instance.OnBumper(_pointValue);
         }
     }
 }

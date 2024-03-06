@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -9,9 +10,11 @@ public class GameManager : MonoBehaviour
     // Objets du jeu
     GameObject _gameBall;
     GameObject _ballLauncher;
+    TextMeshProUGUI _pointsText;
 
     // Etat du jeu
     bool _ballInPlay;
+    int _points;
 
     private void Awake()
     {
@@ -28,7 +31,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         _gameBall = GameObject.Find("GameBall");
-        if(_gameBall == null)
+        if (_gameBall == null)
         {
             Debug.LogError("Objet GameBall inexistant");
             return;
@@ -41,7 +44,22 @@ public class GameManager : MonoBehaviour
             return;
         }
 
+        GameObject textObject = GameObject.Find("PointsText");
+        if (textObject == null)
+        {
+            Debug.LogError("GameObject PointsText inexistant");
+            return;
+        }
+        _pointsText = textObject.GetComponent<TextMeshProUGUI>();
+        if (_pointsText == null)
+        {
+            Debug.LogError("TextMeshPro PointsText inexistant");
+            return;
+        }
+
         _ballInPlay = false;
+        _points = 0;
+        _pointsText.text = string.Empty;
     }
 
     // Update is called once per frame
@@ -79,6 +97,12 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    void AddPoints(int pPoints)
+    {
+        _points += pPoints;
+        _pointsText.text = _points.ToString();
+    }
+
     // Fonctions Publiques
     public bool IsBallInPlay()
     { 
@@ -101,5 +125,10 @@ public class GameManager : MonoBehaviour
     {
         ResetBall();
         ResetGateway();
+    }
+
+    public void OnBumper(int pPoints) 
+    { 
+        AddPoints(pPoints);
     }
 }
