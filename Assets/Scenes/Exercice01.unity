@@ -277,9 +277,33 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Bumper
       objectReference: {fileID: 0}
+    - target: {fileID: 656839466587356257, guid: 9b81ab4f68f7ea94199e8d0312ae7e56, type: 3}
+      propertyPath: _maxBumpingForce
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 656839466587356257, guid: 9b81ab4f68f7ea94199e8d0312ae7e56, type: 3}
+      propertyPath: _minBumpingForce
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 794854920646332230, guid: 9b81ab4f68f7ea94199e8d0312ae7e56, type: 3}
       propertyPath: m_TagString
       value: Bumper
+      objectReference: {fileID: 0}
+    - target: {fileID: 1149090163087648685, guid: 9b81ab4f68f7ea94199e8d0312ae7e56, type: 3}
+      propertyPath: _maxBumpingForce
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1149090163087648685, guid: 9b81ab4f68f7ea94199e8d0312ae7e56, type: 3}
+      propertyPath: _minBumpingForce
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1770786108639856884, guid: 9b81ab4f68f7ea94199e8d0312ae7e56, type: 3}
+      propertyPath: _maxBumpingForce
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1770786108639856884, guid: 9b81ab4f68f7ea94199e8d0312ae7e56, type: 3}
+      propertyPath: _minBumpingForce
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2270390795441416780, guid: 9b81ab4f68f7ea94199e8d0312ae7e56, type: 3}
       propertyPath: m_TagString
@@ -300,6 +324,14 @@ PrefabInstance:
     - target: {fileID: 4217863550196988631, guid: 9b81ab4f68f7ea94199e8d0312ae7e56, type: 3}
       propertyPath: m_TagString
       value: Bumper
+      objectReference: {fileID: 0}
+    - target: {fileID: 4540033645263777031, guid: 9b81ab4f68f7ea94199e8d0312ae7e56, type: 3}
+      propertyPath: _maxBumpingForce
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 4540033645263777031, guid: 9b81ab4f68f7ea94199e8d0312ae7e56, type: 3}
+      propertyPath: _minBumpingForce
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4682434812186923412, guid: 9b81ab4f68f7ea94199e8d0312ae7e56, type: 3}
       propertyPath: m_LocalPosition.x
@@ -341,13 +373,37 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5442955845148236399, guid: 9b81ab4f68f7ea94199e8d0312ae7e56, type: 3}
+      propertyPath: _maxBumpingForce
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 5442955845148236399, guid: 9b81ab4f68f7ea94199e8d0312ae7e56, type: 3}
+      propertyPath: _minBumpingForce
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5570160717515056708, guid: 9b81ab4f68f7ea94199e8d0312ae7e56, type: 3}
       propertyPath: m_TagString
       value: Bumper
       objectReference: {fileID: 0}
+    - target: {fileID: 5901787459745170765, guid: 9b81ab4f68f7ea94199e8d0312ae7e56, type: 3}
+      propertyPath: _maxBumpingForce
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 5901787459745170765, guid: 9b81ab4f68f7ea94199e8d0312ae7e56, type: 3}
+      propertyPath: _minBumpingForce
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6193755240234907575, guid: 9b81ab4f68f7ea94199e8d0312ae7e56, type: 3}
       propertyPath: m_TagString
       value: Bumper
+      objectReference: {fileID: 0}
+    - target: {fileID: 6517756219865761648, guid: 9b81ab4f68f7ea94199e8d0312ae7e56, type: 3}
+      propertyPath: _maxBumpingForce
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6517756219865761648, guid: 9b81ab4f68f7ea94199e8d0312ae7e56, type: 3}
+      propertyPath: _minBumpingForce
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6698569662009902715, guid: 9b81ab4f68f7ea94199e8d0312ae7e56, type: 3}
       propertyPath: m_LocalPosition.x
@@ -365,9 +421,65 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Bumper
       objectReference: {fileID: 0}
+    - target: {fileID: 6938174773655308099, guid: 9b81ab4f68f7ea94199e8d0312ae7e56, type: 3}
+      propertyPath: _maxBumpingForce
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6938174773655308099, guid: 9b81ab4f68f7ea94199e8d0312ae7e56, type: 3}
+      propertyPath: _minBumpingForce
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7012298540328338011, guid: 9b81ab4f68f7ea94199e8d0312ae7e56, type: 3}
+      propertyPath: _maxBumpingForce
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7012298540328338011, guid: 9b81ab4f68f7ea94199e8d0312ae7e56, type: 3}
+      propertyPath: _minBumpingForce
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7114287658172310333, guid: 9b81ab4f68f7ea94199e8d0312ae7e56, type: 3}
+      propertyPath: _maxBumpingForce
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7114287658172310333, guid: 9b81ab4f68f7ea94199e8d0312ae7e56, type: 3}
+      propertyPath: _minBumpingForce
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7114287658172310333, guid: 9b81ab4f68f7ea94199e8d0312ae7e56, type: 3}
+      propertyPath: _maxBumpingForceExclusive
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7114287658172310333, guid: 9b81ab4f68f7ea94199e8d0312ae7e56, type: 3}
+      propertyPath: _minBumpingForceInclusive
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7357786510805790301, guid: 9b81ab4f68f7ea94199e8d0312ae7e56, type: 3}
+      propertyPath: _maxBumpingForce
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7357786510805790301, guid: 9b81ab4f68f7ea94199e8d0312ae7e56, type: 3}
+      propertyPath: _minBumpingForce
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 7643458554784207910, guid: 9b81ab4f68f7ea94199e8d0312ae7e56, type: 3}
       propertyPath: m_TagString
       value: Bumper
+      objectReference: {fileID: 0}
+    - target: {fileID: 7665427479802601269, guid: 9b81ab4f68f7ea94199e8d0312ae7e56, type: 3}
+      propertyPath: _maxBumpingForce
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7665427479802601269, guid: 9b81ab4f68f7ea94199e8d0312ae7e56, type: 3}
+      propertyPath: _minBumpingForce
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7718126366300168713, guid: 9b81ab4f68f7ea94199e8d0312ae7e56, type: 3}
+      propertyPath: _maxBumpingForce
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7718126366300168713, guid: 9b81ab4f68f7ea94199e8d0312ae7e56, type: 3}
+      propertyPath: _minBumpingForce
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7845112486811200844, guid: 9b81ab4f68f7ea94199e8d0312ae7e56, type: 3}
       propertyPath: m_TagString
@@ -376,6 +488,14 @@ PrefabInstance:
     - target: {fileID: 8171083755471914775, guid: 9b81ab4f68f7ea94199e8d0312ae7e56, type: 3}
       propertyPath: m_TagString
       value: Bumper
+      objectReference: {fileID: 0}
+    - target: {fileID: 8370849571660876415, guid: 9b81ab4f68f7ea94199e8d0312ae7e56, type: 3}
+      propertyPath: _maxBumpingForce
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8370849571660876415, guid: 9b81ab4f68f7ea94199e8d0312ae7e56, type: 3}
+      propertyPath: _minBumpingForce
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 9137920402245656246, guid: 9b81ab4f68f7ea94199e8d0312ae7e56, type: 3}
       propertyPath: m_TagString

@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class BumperLogic : MonoBehaviour
 {
+    [SerializeField]
+    private float _minBumpingForce = 10f;
+    [SerializeField]
+    private float _maxBumpingForce = 20f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -28,7 +33,8 @@ public class BumperLogic : MonoBehaviour
             Rigidbody rb = obj.GetComponent<Rigidbody>();
             if(rb != null) 
             {
-                rb.AddForce(-collision.GetContact(0).normal * 15f, ForceMode.Impulse);
+                float bumpingForce = Random.Range(_minBumpingForce, _maxBumpingForce);
+                rb.AddForce(-collision.GetContact(0).normal * bumpingForce, ForceMode.Impulse);
             }
         }
     }
